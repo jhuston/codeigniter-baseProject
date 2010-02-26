@@ -1,5 +1,5 @@
 <div class="form">
-<?=form_open('login');?>
+<?=form_open('admin');?>
 <?=form_fieldset('')?>
 <ol>
 	<li><?=form_label('Username',"username");?>

@@ -105,6 +105,7 @@ class MY_Controller extends Controller {
 	 */
 	public function __construct() {
 	  parent::Controller();
+		$this->logged_in = $this->site_sentry->is_logged_in();
 		// $this->_load_models();
 	}
 	

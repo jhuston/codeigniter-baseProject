@@ -8,6 +8,10 @@ strong{font-weight:bold}
 em{font-style:normal}
 a{text-decoration:none; cursor:pointer}
 
+/* error message styles */
+.red{
+	color: #E00;
+}
 /* login form */
 #login{
 	border: 1px solid #999;
@@ -54,3 +58,5 @@ input.submit, button, input[type="submit"], input[type="button"], input[type="fi
 #login input.button:hover{
 	background-color: #D5D5D5;
 }
+
+

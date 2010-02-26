@@ -11,15 +11,28 @@ class Admin extends MY_Controller{
 	}
 	
 	public function index(){
-		
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		if($username != ""){
+			$this->_login($username,$password);
+		}
 	}
 	
-	public function login(){
-		
+	private function _login($username,$password){
+		$this->site_sentry->login_routine($username,$password,'dashboard');
 	}
 	
 	public function logout(){
-		
+		$this->session->sess_destroy();
+		redirect('','location');
+		exit;
 	}
+	
+	// public function encrypt_password($password){
+	// 	$this->view =FALSE;
+	// 	$this->layout = FALSE;
+	// 	$password = $this->encrypt->encode($password);
+	// 	echo $password;
+	// }
 
 }
