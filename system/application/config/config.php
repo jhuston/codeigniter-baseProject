@@ -11,7 +11,7 @@
 |	http://example.com/
 |
 */
-$config['base_url']	= "http://current/lesamis";
+$config['base_url']	= "http://path/to/project/";
 
 /*
 |--------------------------------------------------------------------------
