@@ -1,0 +1,56 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend caption{ margin:0; padding:0; border:0; outline:0; font-weight:inherit; font-style:inherit; font-size:100%; font-family:inherit; vertical-align:baseline}
+:focus{outline:0}
+ol, ul{list-style:none}
+blockquote:before, blockquote:after, q:before, q:after{content:""}
+blockquote, q{quotes:"" ""}
+strong{font-weight:bold}
+em{font-style:normal}
+a{text-decoration:none; cursor:pointer}
+
+/* login form */
+#login{
+	border: 1px solid #999;
+	padding: 45px;
+	width:300px;
+	margin: 0px auto;
+	margin-top: 30px;
+}
+#login h1{
+	font-size: 24px;
+	padding: 0px;
+	margin: 0px;
+}
+#login p{
+	font-size: 10px;
+	margin-bottom: 10px;
+}
+#login .form ol{
+	width:300px;
+}
+#login .form ol li{
+	padding: 10px 0px;
+}
+#login .form ol li label{
+	display: inline-block;
+	width: 100px;
+}
+input.submit, button, input[type="submit"], input[type="button"], input[type="file"] > input[type="button"]{
+	background: #e6e6e6;
+	cursor: pointer;
+	border: 1px solid #999;
+	padding: 4px 8px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+#login input{
+	padding: 4px 2px;
+	border: 1px solid #999;
+}
+#login input.button{
+	margin-left: 104px;
+	width: 60px;
+}
+#login input.button:hover{
+	background-color: #D5D5D5;
+}
