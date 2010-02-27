@@ -95,15 +95,6 @@ class MY_Controller extends Controller {
 	protected $logged_in;
 	
 	/**
-	 * string constants for login and sign up target and text.
-	 * 
-	 * @author Jeffrey Huston
-	 */
-	protected $login_target = 'login';
-	protected $login_text = 'Login';
-	protected $sign_up_target = 'sign_up';
-	protected $sign_up_text = 'Sign Up';
-	/**
 	 * The class constructor, loads the models
 	 * from the $this->models array.
 	 *
@@ -114,6 +105,7 @@ class MY_Controller extends Controller {
 	 */
 	public function __construct() {
 	  parent::Controller();
+		$this->logged_in = $this->site_sentry->is_logged_in();
 		// $this->_load_models();
 	}
 	
